@@ -7,28 +7,15 @@ let resultado = 1
 let fatorial = 7
 let texto = `${fatorial}`
 
-for(i = fatorial ; i >= 1; i--){ 
+const fazFatorial = function(fatorial){
+  for(i = fatorial ; i >= 1; i--){ 
   
-  if(i != 1){
-    texto += ` X ${i - 1}`
-  }  
-  
-  resultado *= i
+    if(i != 1){
+     texto += ` X ${i - 1}`
+   }    
+   resultado *= i
+  }
+  return `Fatorial de ${fatorial}!: ${texto} = ${resultado}`
 }
 
-console.log(`Fatorial de ${fatorial}!: ${texto} = ${resultado}`)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(fazFatorial(fatorial))
